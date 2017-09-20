@@ -5,7 +5,7 @@ public class Урок3 {
         h.sleep(4,5);
         System.out.println(h.name);
 
-        Human.eyeCount=3;
+        Human.eyeCount=5;
         System.out.println(Human.eyeCount);
 
         Human h2 = h; //без " new" не создается новая переменная, а создается ссылка.
