@@ -6,7 +6,7 @@ public class JdbcConnection {// будет выполнять подключен
     private static Connection conn;//
     public static  void init() throws ClassNotFoundException, SQLException {//создается подключение
         Class.forName("com.mysql.jdbc.Driver");//создает соединение со службой
-        conn= DriverManager.getConnection("jdbc:mysql://localhost/test_db","artem","123a321");
+        conn= DriverManager.getConnection("jdbc:mysql://localhost/orange_db","Artem","14785236");
     }
     public  static  Connection getConnetion(){//создает объект conn public (публичный)
         return conn;
