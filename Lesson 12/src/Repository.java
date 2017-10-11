@@ -13,5 +13,18 @@ public class Repository {
         if (result.next()==false){
             throw new Exception("Не верный логин или пароль");
         }
+        Repository.playerId=result.getInt("id");
     }
+    public  void  register(player p) throws SQLException {
+        Connection con=JdbcConnection.getConnetion();
+        PreparedStatement ps=con.prepareStatement("INSERT INTO players(login,pass_hash,age) Values(?,?,?)");
+        ps.setString(1,p.login);
+        ps.setString(2,p.pass_hash);
+        ps.setInt(3,p.age);
+        ps.executeUpdate();
+        ResultSet result=ps.getGeneratedKeys();
+        Repository.playerId=result.getInt(1);
+    }
+    private static int playerId;
+
 }

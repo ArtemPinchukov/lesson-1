@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="RegistrationForm">
+  <grid id="27dc6" binding="Panel2" layout-manager="FormLayout">
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:16dlu:noGrow"/>
+    <rowspec value="center:31px:noGrow"/>
+    <rowspec value="top:18dlu:noGrow"/>
+    <rowspec value="top:22dlu:noGrow"/>
+    <rowspec value="top:5dlu:noGrow"/>
+    <rowspec value="center:25px:noGrow"/>
+    <rowspec value="top:11dlu:noGrow"/>
+    <rowspec value="center:26px:noGrow"/>
+    <rowspec value="top:16dlu:noGrow"/>
+    <rowspec value="center:32px:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <colspec value="fill:d:noGrow"/>
+    <colspec value="fill:48px:noGrow"/>
+    <colspec value="left:9dlu:noGrow"/>
+    <colspec value="left:59dlu:noGrow"/>
+    <colspec value="fill:34px:noGrow"/>
+    <colspec value="left:28dlu:noGrow"/>
+    <colspec value="fill:29px:noGrow"/>
+    <constraints>
+      <xy x="20" y="20" width="322" height="362"/>
+    </constraints>
+    <properties>
+      <maximumSize width="500" height="300"/>
+      <minimumSize width="300" height="300"/>
+      <preferredSize width="300" height="300"/>
+      <requestFocusEnabled value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="8dcfb" class="javax.swing.JTextField" binding="Password">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <alignmentX value="1.0"/>
+          <background color="-5898318"/>
+          <editable value="true"/>
+          <horizontalAlignment value="11"/>
+          <maximumSize width="100" height="100"/>
+          <minimumSize width="15" height="24"/>
+          <opaque value="false"/>
+          <preferredSize width="100" height="25"/>
+          <selectionEnd value="0"/>
+          <verifyInputWhenFocusTarget value="true"/>
+          <visible value="true"/>
+        </properties>
+        <clientProperties>
+          <caretAspectRatio class="java.lang.Double" value="0.0"/>
+          <caretWidth class="java.lang.Integer" value="10"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="c38dd" class="javax.swing.JTextField" binding="loginTextField" default-binding="true">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <alignmentX value="1.0"/>
+          <background color="-5898318"/>
+          <editable value="true"/>
+          <horizontalAlignment value="11"/>
+          <maximumSize width="100" height="100"/>
+          <minimumSize width="15" height="24"/>
+          <opaque value="false"/>
+          <preferredSize width="100" height="25"/>
+          <requestFocusEnabled value="false"/>
+          <selectionEnd value="0"/>
+          <verifyInputWhenFocusTarget value="true"/>
+          <visible value="true"/>
+        </properties>
+        <clientProperties>
+          <caretAspectRatio class="java.lang.Double" value="0.0"/>
+          <caretWidth class="java.lang.Integer" value="10"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="f48da" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Password"/>
+        </properties>
+      </component>
+      <component id="b4536" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Repeat password"/>
+        </properties>
+      </component>
+      <component id="25f51" class="javax.swing.JTextField" binding="repeatPasswordField">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <alignmentX value="1.0"/>
+          <background color="-5898318"/>
+          <editable value="true"/>
+          <horizontalAlignment value="11"/>
+          <maximumSize width="100" height="100"/>
+          <minimumSize width="15" height="24"/>
+          <opaque value="false"/>
+          <preferredSize width="100" height="25"/>
+          <selectionEnd value="0"/>
+          <verifyInputWhenFocusTarget value="true"/>
+          <visible value="true"/>
+        </properties>
+        <clientProperties>
+          <caretAspectRatio class="java.lang.Double" value="0.0"/>
+          <caretWidth class="java.lang.Integer" value="10"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="3f10d" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <alignmentX value="1.0"/>
+          <autoscrolls value="false"/>
+          <doubleBuffered value="false"/>
+          <enabled value="true"/>
+          <focusCycleRoot value="false"/>
+          <focusTraversalPolicyProvider value="false"/>
+          <horizontalAlignment value="2"/>
+          <horizontalTextPosition value="11"/>
+          <iconTextGap value="30"/>
+          <inheritsPopupMenu value="false"/>
+          <labelFor value=""/>
+          <opaque value="false"/>
+          <text value="Login"/>
+          <verifyInputWhenFocusTarget value="true"/>
+          <verticalAlignment value="0"/>
+          <visible value="true"/>
+        </properties>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="ba8d4" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <alignmentX value="1.0"/>
+          <autoscrolls value="false"/>
+          <doubleBuffered value="false"/>
+          <enabled value="true"/>
+          <focusCycleRoot value="false"/>
+          <focusTraversalPolicyProvider value="false"/>
+          <horizontalAlignment value="2"/>
+          <horizontalTextPosition value="11"/>
+          <iconTextGap value="30"/>
+          <inheritsPopupMenu value="false"/>
+          <labelFor value=""/>
+          <opaque value="false"/>
+          <text value="Age"/>
+          <verifyInputWhenFocusTarget value="true"/>
+          <verticalAlignment value="0"/>
+          <visible value="true"/>
+        </properties>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="e3a5" class="javax.swing.JButton" binding="registrationButton" default-binding="true">
+        <constraints>
+          <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="Registration"/>
+        </properties>
+      </component>
+      <component id="b8a1c" class="javax.swing.JTextField" binding="ageField">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <alignmentX value="1.0"/>
+          <background color="-5898318"/>
+          <editable value="true"/>
+          <horizontalAlignment value="11"/>
+          <maximumSize width="100" height="100"/>
+          <minimumSize width="15" height="24"/>
+          <opaque value="false"/>
+          <preferredSize width="100" height="25"/>
+          <selectionEnd value="0"/>
+          <verifyInputWhenFocusTarget value="true"/>
+          <visible value="true"/>
+        </properties>
+        <clientProperties>
+          <caretAspectRatio class="java.lang.Double" value="0.0"/>
+          <caretWidth class="java.lang.Integer" value="10"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+    </children>
+  </grid>
+</form>
