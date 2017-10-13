@@ -114,7 +114,8 @@
           <minimumSize width="15" height="24"/>
           <opaque value="false"/>
           <preferredSize width="200" height="25"/>
-          <selectionEnd value="0"/>
+          <selectionEnd value="3"/>
+          <text value="asd"/>
           <verifyInputWhenFocusTarget value="true"/>
           <visible value="true"/>
         </properties>
@@ -139,7 +140,8 @@
           <minimumSize width="15" height="24"/>
           <opaque value="false"/>
           <preferredSize width="200" height="25"/>
-          <selectionEnd value="0"/>
+          <selectionEnd value="3"/>
+          <text value="123"/>
           <verifyInputWhenFocusTarget value="true"/>
           <visible value="true"/>
         </properties>

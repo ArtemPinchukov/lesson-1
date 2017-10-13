@@ -60,7 +60,12 @@ public class RegistrationForm  extends JFrame {
                     JOptionPane.showMessageDialog(null,"Ошибка регистрации","Error",JOptionPane.ERROR_MESSAGE);
                     return;
                 } ;
-                gameForm gf=new gameForm();
+                gameForm gf= null;
+                try {
+                    gf = new gameForm();
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
                 gf.setVisible(true);
                 setVisible(false);
             }
