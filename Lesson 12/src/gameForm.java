@@ -30,17 +30,40 @@ public class gameForm extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 String answer=answerField.getText();
                 String correctAnswer=currentQuestion.answer;
+                answerField.setText("");
                 if (answer.equalsIgnoreCase(correctAnswer)) {
                     JOptionPane.showMessageDialog(null, "Ты прав!", "WIN", JOptionPane.INFORMATION_MESSAGE);
                     score += tryCount + 2 * hintCount;
-                    //TODO проверить последний ли это вопрос
-                    showNextQuestion();
+                    if(questionNumber==Questions.size()){
+                        RecordsRep rr=new RecordsRep();
+                        try {
+                            rr.addRecord(Repository.playerId,score);
+                            setVisible(false);
+                            RecordForm rf=new RecordForm();
+                            rf.setVisible(true);
+                        } catch (SQLException e1) {
+                            e1.printStackTrace();
+                        }
+                    }else {
+                        showNextQuestion();
+                    }
                 }else {
                     tryCount--;
                     if (tryCount==0){
                         JOptionPane.showMessageDialog(null, "Вы проиграли! Правильный ответ:"+currentQuestion.answer, "Game Over!", JOptionPane.INFORMATION_MESSAGE);
-                        //TODO проверить последний ли это вопрос
-                        showNextQuestion();
+                        if(questionNumber==Questions.size()){
+                            RecordsRep rr=new RecordsRep();
+                            try {
+                                rr.addRecord(Repository.playerId,score);
+                                setVisible(false);
+                                RecordForm rf=new RecordForm();
+                                rf.setVisible(true);
+                            } catch (SQLException e1) {
+                                e1.printStackTrace();
+                            }
+                        }else {
+                            showNextQuestion();
+                        }
                     }else {
                         updateTryCountLableText();
                     }
@@ -68,8 +91,19 @@ public class gameForm extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(null, "Вы проиграли! Правильный ответ:"+currentQuestion.answer, "Game Over!", JOptionPane.INFORMATION_MESSAGE);
-                //TODO проверить последний ли это вопрос
-                showNextQuestion();
+                if(questionNumber==Questions.size()){
+                    RecordsRep rr=new RecordsRep();
+                    try {
+                        rr.addRecord(Repository.playerId,score);
+                        setVisible(false);
+                        RecordForm rf=new RecordForm();
+                        rf.setVisible(true);
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
+                }else {
+                    showNextQuestion();
+                }
             }
         });
     }
@@ -111,7 +145,7 @@ public class gameForm extends JFrame{
     }
     private  int tryCount;
     private  void updateTryCountLableText(){
-        String s =String.format("У вас остлось (%d) попыток",tryCount);
+        String s =String.format("У вас осталось (%d) попыток",tryCount);
         hintButton.setText(s);
     }
 

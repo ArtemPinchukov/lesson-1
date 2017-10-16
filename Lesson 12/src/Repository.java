@@ -25,6 +25,6 @@ public class Repository {
         ResultSet result=ps.getGeneratedKeys();
         Repository.playerId=result.getInt(1);
     }
-    private static int playerId;
+    public static int playerId;
 
 }
